@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		CAEE280C2289D05D00C0092E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAEE280B2289D05D00C0092E /* AppDelegate.swift */; };
-		CAEE280E2289D05D00C0092E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAEE280D2289D05D00C0092E /* ViewController.swift */; };
 		CAEE28112289D05D00C0092E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CAEE280F2289D05D00C0092E /* Main.storyboard */; };
 		CAEE28132289D05E00C0092E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CAEE28122289D05E00C0092E /* Assets.xcassets */; };
 		CAEE28162289D05E00C0092E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CAEE28142289D05E00C0092E /* LaunchScreen.storyboard */; };
@@ -17,7 +16,6 @@
 /* Begin PBXFileReference section */
 		CAEE28082289D05D00C0092E /* DeckOfOneCard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DeckOfOneCard.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CAEE280B2289D05D00C0092E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		CAEE280D2289D05D00C0092E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		CAEE28102289D05D00C0092E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CAEE28122289D05E00C0092E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CAEE28152289D05E00C0092E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -54,14 +52,21 @@
 		CAEE280A2289D05D00C0092E /* DeckOfOneCard */ = {
 			isa = PBXGroup;
 			children = (
-				CAEE280B2289D05D00C0092E /* AppDelegate.swift */,
-				CAEE280D2289D05D00C0092E /* ViewController.swift */,
 				CAEE280F2289D05D00C0092E /* Main.storyboard */,
+				CAEE281D2289D08200C0092E /* Resources */,
+			);
+			path = DeckOfOneCard;
+			sourceTree = "<group>";
+		};
+		CAEE281D2289D08200C0092E /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				CAEE280B2289D05D00C0092E /* AppDelegate.swift */,
 				CAEE28122289D05E00C0092E /* Assets.xcassets */,
 				CAEE28142289D05E00C0092E /* LaunchScreen.storyboard */,
 				CAEE28172289D05E00C0092E /* Info.plist */,
 			);
-			path = DeckOfOneCard;
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,7 +140,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CAEE280E2289D05D00C0092E /* ViewController.swift in Sources */,
 				CAEE280C2289D05D00C0092E /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -283,7 +287,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = DeckOfOneCard/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/DeckOfOneCard/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -300,7 +304,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = DeckOfOneCard/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/DeckOfOneCard/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
