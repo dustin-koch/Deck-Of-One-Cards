@@ -11,6 +11,9 @@
 		CAEE28112289D05D00C0092E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CAEE280F2289D05D00C0092E /* Main.storyboard */; };
 		CAEE28132289D05E00C0092E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CAEE28122289D05E00C0092E /* Assets.xcassets */; };
 		CAEE28162289D05E00C0092E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CAEE28142289D05E00C0092E /* LaunchScreen.storyboard */; };
+		CAEE281F2289D54300C0092E /* SwapiViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAEE281E2289D54300C0092E /* SwapiViewController.swift */; };
+		CAEE28222289D80400C0092E /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAEE28212289D80400C0092E /* Person.swift */; };
+		CAEE28252289DA0900C0092E /* PersonController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAEE28242289DA0900C0092E /* PersonController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +23,9 @@
 		CAEE28122289D05E00C0092E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CAEE28152289D05E00C0092E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CAEE28172289D05E00C0092E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CAEE281E2289D54300C0092E /* SwapiViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwapiViewController.swift; sourceTree = "<group>"; };
+		CAEE28212289D80400C0092E /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
+		CAEE28242289DA0900C0092E /* PersonController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +59,9 @@
 			isa = PBXGroup;
 			children = (
 				CAEE280F2289D05D00C0092E /* Main.storyboard */,
+				CAEE28262289DA0E00C0092E /* Model Controller */,
+				CAEE28232289D80800C0092E /* Model */,
+				CAEE28202289D54C00C0092E /* View Controller */,
 				CAEE281D2289D08200C0092E /* Resources */,
 			);
 			path = DeckOfOneCard;
@@ -67,6 +76,30 @@
 				CAEE28172289D05E00C0092E /* Info.plist */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		CAEE28202289D54C00C0092E /* View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				CAEE281E2289D54300C0092E /* SwapiViewController.swift */,
+			);
+			path = "View Controller";
+			sourceTree = "<group>";
+		};
+		CAEE28232289D80800C0092E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CAEE28212289D80400C0092E /* Person.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CAEE28262289DA0E00C0092E /* Model Controller */ = {
+			isa = PBXGroup;
+			children = (
+				CAEE28242289DA0900C0092E /* PersonController.swift */,
+			);
+			path = "Model Controller";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -140,7 +173,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CAEE28252289DA0900C0092E /* PersonController.swift in Sources */,
+				CAEE28222289D80400C0092E /* Person.swift in Sources */,
 				CAEE280C2289D05D00C0092E /* AppDelegate.swift in Sources */,
+				CAEE281F2289D54300C0092E /* SwapiViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
